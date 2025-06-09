@@ -13,11 +13,24 @@ const customers = [
     }
 ];
 
+
 customers.push({
     Name: "Amanda Shelby",
     Email: "amandashelby@email.com",
     Purchases: ["Larage Bundle, XL Bundle"]
 });
 
-customers.shift()
+customers.shift();
 
+
+customers[0].email = "kklew@usf.edu";
+
+customers[1].Purchases.push("XL Bundle");
+
+
+customers.forEach((obj) => {
+  console.log(`Name: ${obj.Nameame}`);
+  console.log(`Email: ${obj.Emailmail}`);
+  console.log(`Total Purchases: ${obj.Purchases.length}`);
+  console.log("-----------------------------");
+});
